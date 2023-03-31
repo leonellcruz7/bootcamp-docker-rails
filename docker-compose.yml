@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  database:
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PGPASSWORD: postgres
+  web:
+    build: .
+    image: dockerized_rails
+    command: /bin/sh -c "bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+volumes:
+  pgdata:
