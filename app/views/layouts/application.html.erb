@@ -9,6 +9,24 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+  
+  input{
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 40px
+  }
+  td, th{
+    margin: 0 10px
+  }
+  .field{
+    width: 300px;
+    display: flex;
+    justify-content: space-between
+  }
+  </style>
 
   <body>
     <%= yield %>
