@@ -1,24 +1,14 @@
-# README
+## Docker setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- First time setup:
 
-Things you may want to cover:
+- Install docker
 
-* Ruby version
+```sh
+make build
 
-* System dependencies
+# setup database
+make setup
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# start the Docker services
+make up
