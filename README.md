@@ -51,7 +51,7 @@ you can use form_with helper and use User.new as a model. Target the create meth
 ### Bonus
 - Create delete link/button that targets the destroy method in controller. The link can be done this way
 ```
-<%= link_to "Delete Book", @book, method: "delete", { confirm: "Are you sure?", disable_with: "Processing..." } %>
+<%= link_to "Delete User", @user, method: "delete", { confirm: "Are you sure?", disable_with: "Processing..." } %>
 ```
 
 - Use partial page for form. name it `_form.html.erb` which can be called in new.html.erb and edit.html.erb. Pass the correct model during render like so
