@@ -4,6 +4,10 @@
 
 - Install docker
 
+- CD bootcamp-docker-rails
+
+- Run the ff commands:
+
 ```sh
 # build the docker image
 make build
