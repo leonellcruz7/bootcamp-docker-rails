@@ -30,3 +30,6 @@ console:
 
 routes:
 	docker compose exec app bin/rails routes
+
+rails:
+  docker compose exe app bin/rails $(cmd)
