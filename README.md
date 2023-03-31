@@ -23,7 +23,7 @@ make up
 ### Create a Users page list with CRUD functionality. The add and edit can be in a separate pages.
 
 - Create a model called User
-  reference for creating model here: https://guides.rubyonrails.org/getting_started.html#mvc-and-you-generating-a-model
+  <br> reference for creating model here: https://guides.rubyonrails.org/getting_started.html#mvc-and-you-generating-a-model
 
 - In the generated migration file add the ff fields:
   ```
@@ -35,16 +35,16 @@ make up
   reference to migration: https://guides.rubyonrails.org/getting_started.html#database-migrations
 
 - Add a routes for users using resources
-  reference to routes: https://guides.rubyonrails.org/routing.html#resources-on-the-web
+  <br> reference to routes: https://guides.rubyonrails.org/routing.html#resources-on-the-web
 
 - Create a UsersController with the following methods: index, new, edit, create, update, destroy
 
 - In index page just plot the users properly in a table list. Add a "Add new" button that leads to New page and Edit link/button along with the list that points to Edit page
-  reference for Route helper: https://guides.rubyonrails.org/routing.html#creating-paths-and-urls-from-objects
+  <br> reference for Route helper: https://guides.rubyonrails.org/routing.html#creating-paths-and-urls-from-objects
 
 - In New page create a form to which accepts firstname, lastname, username, password as a fields.
 you can use form_with helper and use User.new as a model. Target the create method in controller as the url action.
-  reference: https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object
+  <br> reference: https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object
 
 - In Update page same form can be used but use User.find(id) as the model in form_with helper. Target the update method in controller as the url action.
 
