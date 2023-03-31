@@ -5,6 +5,7 @@
 - Install docker
 
 ```sh
+# build the docker image
 make build
 
 # setup database
